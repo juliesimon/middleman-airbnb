@@ -1,0 +1,29 @@
+.flat-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 50px;
+}
+
+.flat-owner {
+  img {
+    width: 100px;
+    padding: 10px;
+  }
+  p {
+    margin-bottom: 0px;
+    color: #77777F;
+    font-weight: lighter;
+  }
+}
+
+.flat-main {
+  font-weight: lighter;
+  h2 {
+    font-weight: lighter;
+    margin-top: 0;
+  }
+  .fa-star {
+    color: #ffb400;
+  }
+}

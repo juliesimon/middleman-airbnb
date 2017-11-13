@@ -1,0 +1,34 @@
+<!-- source/flats/show.html.erb -->
+
+<!-- Access data.flats with owner's name as key -->
+<% flat = data.flats[owner] %>
+
+<!-- Inject flat data in template -->
+
+<div class="banner" style="background-image: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url('https://kitt.lewagon.com/placeholder/cities/<%= flat.city_name %>'); height: 50vh; background-position: center;">
+</div>
+
+
+
+<div class="header-flat">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-3">
+        <div class="flat-info">
+          <div class="flat-main">
+            <h2><%= flat.description %></h2>
+            <p><%= flat.city_name %></p>
+            <% flat.rating.times do %>
+              <i class="fa fa-star"></i>
+            <% end %>
+          </div>
+          <div class="flat-owner text-center">
+            <%= image_tag "https://kitt.lewagon.com/placeholder/users/#{owner}", class:"img-circle" %>
+            <p> The owner</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
